@@ -297,7 +297,7 @@ function AboutSection() {
 </p>
 
 <p className="mt-4 text-lg leading-8 text-slate-600">
-  We believe church is not just a place to attend Ã¯Â¿Â½ it is a family to belong to. Whether you are new to faith, searching for answers, or looking to grow deeper spiritually, you are welcome here. We are committed to training believers, equipping leaders, and serving communities with compassion, excellence, and integrity.
+  We believe church is not just a place to attend - it is a family to belong to. Whether you are new to faith, searching for answers, or looking to grow deeper spiritually, you are welcome here. We are committed to training believers, equipping leaders, and serving communities with compassion, excellence, and integrity.
 </p>
 
 <p className="mt-4 text-lg font-medium text-[#0b1a3a]">
@@ -432,12 +432,12 @@ function MissionVisionTeamSection() {
       </div>
 
       <ul className="mt-6 space-y-3 text-slate-600 leading-7">
-        <li>Ã¯Â¿Â½ We seek to lead people to Jesus Christ</li>
-        <li>Ã¯Â¿Â½ To bring them into GodÃ¯Â¿Â½s family</li>
-        <li>Ã¯Â¿Â½ To nurture them into mature Christians</li>
-        <li>Ã¯Â¿Â½ To equip them for ministry in the Church</li>
-        <li>Ã¯Â¿Â½ To get them involved in the worldwide mission</li>
-        <li>Ã¯Â¿Â½ To glorify GodÃ¯Â¿Â½s name at home and to the ends of the earth</li>
+        <li>- We seek to lead people to Jesus Christ</li>
+        <li>- To bring them into God's family</li>
+        <li>- To nurture them into mature Christians</li>
+        <li>- To equip them for ministry in the Church</li>
+        <li>- To get them involved in the worldwide mission</li>
+        <li>- To glorify God's name at home and to the ends of the earth</li>
       </ul>
     </div>
 
@@ -474,7 +474,7 @@ function MissionVisionTeamSection() {
 
         <p className="mt-6 text-white/85 text-lg leading-8">
           To see Jesus in all the loveliness of His person and the perfection of
-          His work Ã¯Â¿Â½ and to make Him known through the preaching of the gospel.
+          His work - and to make Him known through the preaching of the gospel.
         </p>
 
         {/* Small scripture-style accent (optional) */}
@@ -483,7 +483,7 @@ function MissionVisionTeamSection() {
             Our Focus
           </p>
           <p className="mt-2 text-base text-white/85">
-            Preaching Ã¯Â¿Â½ Discipleship Ã¯Â¿Â½ Church Ministry Ã¯Â¿Â½ Community Outreach
+            Preaching - Discipleship - Church Ministry - Community Outreach
           </p>
         </div>
       </div>
@@ -643,7 +643,7 @@ function BibleTrainingSection() {
         their communities with the truth of God's Word.
         <br /><br />
         Our training emphasizes character formation, spiritual discipline,
-        servant leadership, and a heart for outreach Ã¯Â¿Â½ building leaders who
+        servant leadership, and a heart for outreach  building leaders who
         reflect Christ in both life and ministry.
       </p>
 <p className="mt-8 text-lg text-slate-600 leading-8">
@@ -670,12 +670,12 @@ function StatementOfFaith() {
     {
       title: "The Bible",
       content:
-        "The Bible is GodÃ¯Â¿Â½s unique revelation to humanity. It is the inspired, infallible Word of God and the supreme and final authority on all matters upon which it teaches.",
+        "The Bible is God's unique revelation to humanity. It is the inspired, infallible Word of God and the supreme and final authority on all matters upon which it teaches.",
     },
     {
       title: "The Godhead",
       content:
-        "There is only one God, the Creator of heaven and earth, who co-exists eternally as three persons Ã¯Â¿Â½ the Father, the Son, and the Holy Spirit Ã¯Â¿Â½ each fully God, yet personally distinct.",
+        "There is only one God, the Creator of heaven and earth, who co-exists eternally as three persons - the Father, the Son, and the Holy Spirit - each fully God, yet personally distinct.",
     },
     {
       title: "Jesus Christ",
@@ -695,7 +695,7 @@ function StatementOfFaith() {
     {
       title: "Holiness",
       content:
-        "Holiness is GodÃ¯Â¿Â½s standard of living for His people.",
+        "Holiness is God's standard of living for His people.",
     },
     {
       title: "Baptism of the Holy Spirit",
@@ -718,24 +718,24 @@ function StatementOfFaith() {
         "Divine healing is provided for all through the atonement of Jesus Christ.",
     },
     {
-      title: "The LordÃ¯Â¿Â½s Supper and Washing of Feet",
+      title: "The Lord's Supper and Washing of Feet",
       content:
-        "The LordÃ¯Â¿Â½s Supper and the washing of the saintsÃ¯Â¿Â½ feet are ordinances to be observed by believers.",
+        "The Lord's Supper and the washing of the saints' feet are ordinances to be observed by believers.",
     },
     {
       title: "The Second Coming of Christ",
       content:
-        "Jesus Christ will return premillennially Ã¯Â¿Â½ first to resurrect the righteous dead and catch away the living saints to meet Him in the air, and second to reign on the earth for a thousand years.",
+        "Jesus Christ will return premillennially - first to resurrect the righteous dead and catch away the living saints to meet Him in the air, and second to reign on the earth for a thousand years.",
     },
     {
       title: "The Resurrection and Eternity",
       content:
-        "There will be a bodily resurrection Ã¯Â¿Â½ eternal life for the righteous and eternal punishment for the wicked.",
+        "There will be a bodily resurrection - eternal life for the righteous and eternal punishment for the wicked.",
     },
     {
       title: "Human Sexuality and Marriage",
       content:
-        "There are only two genders Ã¯Â¿Â½ male and female Ã¯Â¿Â½ as defined in Scripture (Genesis 1:26Ã¯Â¿Â½28; Matthew 19:4Ã¯Â¿Â½5). Marriage is a sacred union between one man and one woman, exclusive to all others.",
+        "There are only two genders - male and female - as defined in Scripture (Genesis 1:26-28; Matthew 19:4-5). Marriage is a sacred union between one man and one woman, exclusive to all others.",
     },
   ];
 
@@ -927,7 +927,7 @@ function TranslationMinistrySection() {
 
           <p className="mt-6 text-lg leading-8 text-slate-600">
             Through accurate interpretation and spiritual sensitivity,
-            he bridges cultural and language gaps Ã¯Â¿Â½ helping the Gospel
+            he bridges cultural and language gaps - helping the Gospel
             reach hearts effectively and powerfully.
           </p>
 
@@ -1143,8 +1143,8 @@ function TestimonialSection() {
           <p className="text-white/90 text-lg leading-8">
             In the year 2013, my life completely changed through a divine encounter
             with God. At a moment when I was ready to end my life, I suddenly heard
-            the voice of the Lord saying, Ã¯Â¿Â½Do not die. Give Me two minutes Ã¯Â¿Â½ I will
-            change your entire life.Ã¯Â¿Â½
+            the voice of the Lord saying, Do not die. Give Me two minutes  I will
+            change your entire life.
           </p>
 
           <p className="mt-6 text-white/85 text-lg leading-8">
@@ -1655,7 +1655,7 @@ function Footer() {
 </div>
           {/* Center: Copyright */}
           <p className="text-sm text-white/70 md:text-center">
-            Ã¯Â¿Â½ 2026 L H E International Ministries. All rights reserved.
+            2026 L H E International Ministries. All rights reserved.
           </p>
 
           {/* Right: Designed & Developed */}
@@ -1727,4 +1727,3 @@ export default function Home() {
     </main>
   );
 }
-
