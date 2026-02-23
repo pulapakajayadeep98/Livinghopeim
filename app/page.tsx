@@ -106,19 +106,32 @@ function HeroSection() {
       </div>
       <div className="absolute inset-0 bg-gradient-to-br from-[#0b1a3a]/85 via-[#241246]/80 to-[#4b2a7a]/75" />
       <div className="relative z-10 mx-auto flex min-h-[90vh] w-full max-w-6xl flex-col px-6 pb-16 pt-8 text-white">
-    <header className="absolute top-0 left-0 w-full z-50">
+    <header className="absolute top-0 left-1/2 z-50 w-screen -translate-x-1/2">
   <div className="flex items-center justify-between px-8 py-4">
 
     {/* Logo - Properly aligned left top */}
     <div className="flex items-center">
-      <Image
-        src="/lh.png"
-        alt="LHE International Ministries Logo"
-        width={70}
-        height={70}
-        priority
-        className="object-contain"
-      />
+      <div className="flex items-center gap-4">
+            <div className="h-12 w-12 overflow-hidden rounded-xl bg-white/5 ring-1 ring-white/10">
+              <Image
+                src="/lh.png"
+                alt="LHE International Ministries"
+                width={48}
+                height={48}
+                sizes="48px"
+                className="h-full w-full object-contain p-1"
+              />
+            </div>
+
+            <div>
+              <p className="font-serif text-lg font-semibold text-white">
+                Living Hope Int. Evangelism
+              </p>
+              <p className="mt-1 text-xs uppercase tracking-[0.3em] text-white/60">
+                Giving hope to the hopeless
+              </p>
+            </div>
+          </div>
     </div>
 
     {/* Desktop Navigation */}
@@ -171,17 +184,27 @@ function HeroSection() {
           <div className="fixed inset-0 z-50 bg-[#0b1a3a]/95 backdrop-blur-sm md:hidden">
             <div className="flex items-center justify-between px-6 pt-6">
             <div className="flex items-center gap-3">
-  <Image
-    src="/lh.png"
-    alt="LHE International Ministries logo"
-    width={60}
-    height={60}
-    className="object-contain"
-  />
+    <div className="flex items-center gap-4">
+            <div className="h-12 w-12 overflow-hidden rounded-xl bg-white/5 ring-1 ring-white/10">
+              <Image
+                src="/lh.png"
+                alt="LHE International Ministries"
+                width={48}
+                height={48}
+                sizes="48px"
+                className="h-full w-full object-contain p-1"
+              />
+            </div>
 
-  <span className="text-lg font-semibold bg-gradient-to-r from-[#f8d86b] via-[#7ee8fa] to-[#c6ffdd] bg-clip-text text-transparent drop-shadow-[0_6px_18px_rgba(0,0,0,0.4)]">
-    LHE International Ministries
-  </span>
+            <div>
+              <p className="font-serif text-lg font-semibold text-white">
+                Living Hope Int. Evangelism
+              </p>
+              <p className="mt-1 text-xs uppercase tracking-[0.3em] text-white/60">
+                Giving hope to the hopeless
+              </p>
+            </div>
+          </div>
 </div>
               <button
                 type="button"
@@ -224,7 +247,7 @@ function HeroSection() {
           <h1 className="font-serif text-4xl font-semibold leading-tight sm:text-5xl lg:text-6xl">
             <span className="block text-white/90">Welcome To</span>
             <span className="block bg-gradient-to-r from-[#f8d86b] via-[#7ee8fa] to-[#c6ffdd] bg-clip-text text-transparent drop-shadow-[0_6px_18px_rgba(0,0,0,0.4)]">
-              LIVING HOPE I.E
+              LIVING HOPE Int. Evang
             </span>
           </h1>
           <p className="mt-4 text-lg text-white/85 sm:text-xl">
@@ -262,11 +285,11 @@ function AboutSection() {
               Welcome
             </p>
            <h2 className="mt-3 font-serif text-3xl font-semibold text-[#0b1a3a] sm:text-4xl">
-  About L H E International Ministries
+  About LIVING HOPE International Evangelism
 </h2>
 
 <p className="mt-5 text-lg leading-8 text-slate-600">
-  L H E International Ministries is a Spirit-filled, Bible-based ministry committed to spreading the Gospel of Jesus Christ and building a strong community of believers. We exist to help people encounter God's presence, grow in faith through the Word, and live a transformed life through the power of the Holy Spirit.
+  LIVING HOPE International Evangelism is a Spirit-filled, Bible-based ministry committed to spreading the Gospel of Jesus Christ and building a strong community of believers. We exist to help people encounter God's presence, grow in faith through the Word, and live a transformed life through the power of the Holy Spirit.
 </p>
 
 <p className="mt-4 text-lg leading-8 text-slate-600">
@@ -1295,7 +1318,7 @@ function DonationSection() {
                   transaction details to:
                   <br />
                   <span className="font-semibold text-[#f1d27a]">
-                    info@mapaulministries.org
+                    lhievangelism@gmail.com
                   </span>
                 </div>
               </div>
@@ -1391,7 +1414,7 @@ function ContactSection() {
                 <p className="text-sm font-semibold uppercase tracking-wide text-white/70">
                   Email
                 </p>
-                <p className="mt-1">info@mapaulministries.org</p>
+                <p className="mt-1">lhieveng@outlook.com</p>
               </div>
               <div>
                 <p className="text-sm font-semibold uppercase tracking-wide text-white/70">
@@ -1437,7 +1460,7 @@ function Footer() {
           <div className="flex items-center gap-4">
             <div className="h-12 w-12 overflow-hidden rounded-xl bg-white/5 ring-1 ring-white/10">
               <Image
-                src="/LHE.png"
+                src="/lh.png"
                 alt="LHE International Ministries"
                 width={48}
                 height={48}
@@ -1448,7 +1471,7 @@ function Footer() {
 
             <div>
               <p className="font-serif text-lg font-semibold text-white">
-                L H E International Ministries
+                Living Hope International Evangelism
               </p>
               <p className="mt-1 text-xs uppercase tracking-[0.3em] text-white/60">
                 Giving hope to the hopeless
@@ -1495,7 +1518,7 @@ function Footer() {
                   />
                 </svg>
               </span>
-              <span className="font-medium">info@mapaulministries.org</span>
+              <span className="font-medium">lhieveng@outlook.com</span>
             </a>
           </div>
 
