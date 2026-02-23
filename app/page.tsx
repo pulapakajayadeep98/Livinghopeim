@@ -81,17 +81,27 @@ function HeroSection() {
   return (
     <section id="home" className="relative min-h-[90vh] overflow-hidden">
       <div className="absolute inset-0">
-        <div
-          className="hero-slide slide-1"
-          style={{ backgroundImage: "url('/home1.png')" }}
+        <Image
+          src="/home1.png"
+          alt="Hero background slide 1"
+          fill
+          priority
+          sizes="100vw"
+          className="hero-slide slide-1 object-cover"
         />
-        <div
-          className="hero-slide slide-2"
-          style={{ backgroundImage: "url('/home2.jpg')" }}
+        <Image
+          src="/home2.JPG"
+          alt="Hero background slide 2"
+          fill
+          sizes="100vw"
+          className="hero-slide slide-2 object-cover"
         />
-        <div
-          className="hero-slide slide-3"
-          style={{ backgroundImage: "url('/home3.png')" }}
+        <Image
+          src="/home3.png"
+          alt="Hero background slide 3"
+          fill
+          sizes="100vw"
+          className="hero-slide slide-3 object-cover"
         />
       </div>
       <div className="absolute inset-0 bg-gradient-to-br from-[#0b1a3a]/85 via-[#241246]/80 to-[#4b2a7a]/75" />
@@ -210,7 +220,7 @@ function HeroSection() {
           </div>
         ) : null}
 
-        <div className="mt-20 max-w-3xl">
+        <div className="mt-36 max-w-3xl sm:mt-20">
           <h1 className="font-serif text-4xl font-semibold leading-tight sm:text-5xl lg:text-6xl">
             <span className="block text-white/90">Welcome To</span>
             <span className="block bg-gradient-to-r from-[#f8d86b] via-[#7ee8fa] to-[#c6ffdd] bg-clip-text text-transparent drop-shadow-[0_6px_18px_rgba(0,0,0,0.4)]">
@@ -470,11 +480,14 @@ function MissionVisionTeamSection() {
                 key={index}
                 className="bg-white rounded-3xl shadow-[0_15px_40px_rgba(11,26,58,0.12)] overflow-hidden transition-transform hover:-translate-y-2"
               >
-                <div className="h-[260px] overflow-hidden">
-                  <img
+                <div className="h-[300px] overflow-hidden sm:h-[260px]">
+                  <Image
                     src={member.image}
                     alt={member.name}
-                    className="w-full h-full object-cover"
+                    width={520}
+                    height={520}
+                    sizes="(max-width: 1024px) 50vw, 25vw"
+                    className="h-full w-full object-cover object-top sm:object-center"
                   />
                 </div>
 
@@ -501,9 +514,11 @@ function MinistryActivitiesSection() {
 
   {/* Background Image */}
   <div className="absolute inset-0">
-    <img
+    <Image
       src="/baptism.png"
       alt="Church Activities"
+      fill
+      sizes="100vw"
       className="h-full w-full object-cover"
     />
     <div className="absolute inset-0 bg-black/60"></div>
@@ -532,9 +547,12 @@ function ChildrenMinistrySection() {
       <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
 
         <div>
-          <img
+          <Image
             src="/child.jpeg"
             alt="Children Ministry"
+            width={1200}
+            height={900}
+            sizes="(max-width: 768px) 100vw, 50vw"
             className="rounded-2xl shadow-xl w-full"
           />
         </div>
@@ -586,9 +604,12 @@ function BibleTrainingSection() {
       </p>
 
       <div className="mt-10 overflow-hidden rounded-3xl shadow-[0_20px_40px_rgba(0,0,0,0.12)]">
-        <img
+        <Image
           src="/bibletraining.png"
           alt="Bible Training"
+          width={1400}
+          height={900}
+          sizes="(max-width: 1024px) 100vw, 50vw"
           className="w-full h-[420px] object-cover"
         />
       </div>
@@ -747,18 +768,24 @@ function ReachingSocietySection() {
 
           {/* BACK IMAGE (Village / Outreach) */}
           <div className="relative w-full rounded-3xl overflow-hidden shadow-[0_20px_50px_rgba(11,26,58,0.15)] md:absolute md:top-0 md:left-0 md:w-[70%]">
-            <img
+            <Image
               src="/outreach.jpeg"
               alt="Village Outreach"
+              width={1200}
+              height={900}
+              sizes="(max-width: 768px) 100vw, 40vw"
               className="w-full h-full object-cover"
             />
           </div>
 
           {/* FRONT IMAGE (Blanket Helping Image) */}
           <div className="relative mt-6 w-full rounded-3xl overflow-hidden border-8 border-white shadow-[0_25px_60px_rgba(11,26,58,0.25)] md:absolute md:bottom-0 md:right-0 md:mt-0 md:w-[75%] md:z-10">
-            <img
+            <Image
               src="/floods.jpeg"
               alt="Relief Support"
+              width={1200}
+              height={900}
+              sizes="(max-width: 768px) 100vw, 42vw"
               className="w-full h-full object-cover"
             />
           </div>
@@ -815,27 +842,36 @@ function TranslationMinistrySection() {
 
           {/* Large Left Image */}
           <div className="col-span-2 rounded-3xl overflow-hidden shadow-[0_20px_50px_rgba(11,26,58,0.15)]">
-            <img
+            <Image
               src="/gal1.png"
               alt="Conference Translation"
+              width={1200}
+              height={700}
+              sizes="(max-width: 1024px) 100vw, 45vw"
               className="w-full h-[300px] object-cover"
             />
           </div>
 
           {/* Bottom Left */}
           <div className="rounded-3xl overflow-hidden shadow-[0_15px_40px_rgba(11,26,58,0.12)]">
-            <img
+            <Image
               src="/gal2.png"
               alt="Church Meeting"
+              width={800}
+              height={600}
+              sizes="(max-width: 1024px) 50vw, 22vw"
               className="w-full h-[220px] object-cover"
             />
           </div>
 
           {/* Bottom Right */}
           <div className="rounded-3xl overflow-hidden shadow-[0_15px_40px_rgba(11,26,58,0.12)]">
-            <img
+            <Image
               src="/trans3.jpeg"
               alt="Ministry Conference"
+              width={800}
+              height={600}
+              sizes="(max-width: 1024px) 50vw, 22vw"
               className="w-full h-[220px] object-cover"
             />
           </div>
@@ -885,16 +921,22 @@ function PastorProfilePosterSection() {
       <div className="mx-auto grid w-full max-w-6xl gap-12 px-6 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
         <div className="relative">
           <div className="overflow-hidden rounded-3xl shadow-[0_22px_55px_rgba(11,26,58,0.18)]">
-            <img
+            <Image
               src="/lh1.jpeg"
               alt="M.A. Paul ministry portrait"
+              width={900}
+              height={1100}
+              sizes="(max-width: 1024px) 100vw, 45vw"
               className="h-[460px] w-full object-cover object-top"
             />
           </div>
           <div className="absolute -bottom-8 -right-6 hidden w-44 overflow-hidden rounded-2xl border-4 border-white shadow-[0_16px_30px_rgba(11,26,58,0.2)] sm:block">
-            <img
+            <Image
               src="/lh2.jpeg"
               alt="M.A. Paul during ministry"
+              width={400}
+              height={500}
+              sizes="176px"
               className="h-56 w-full object-cover"
             />
           </div>
@@ -926,7 +968,15 @@ function PrayerSupportSection() {
   <section className="relative py-20 text-white">
 
   {/* Background Image */}
-  <div className="absolute inset-0 bg-[url('/prayer.png')] bg-cover bg-center"></div>
+  <div className="absolute inset-0">
+    <Image
+      src="/prayer.png"
+      alt="Prayer support background"
+      fill
+      sizes="100vw"
+      className="object-cover"
+    />
+  </div>
 
   {/* Dark Overlay */}
   <div className="absolute inset-0 bg-gradient-to-br from-[#241246]/90 to-[#0b1a3a]/90"></div>
@@ -1138,9 +1188,12 @@ function PremiumGallerySection() {
               className="group relative mb-6 cursor-pointer overflow-hidden rounded-2xl"
               onClick={() => setSelectedImage(src)}
             >
-              <img
+              <Image
                 src={src}
                 alt="Gallery"
+                width={1000}
+                height={1200}
+                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 className="w-full rounded-2xl object-cover transition-transform duration-700 group-hover:scale-110"
               />
               <div className="absolute inset-0 bg-black/0 transition duration-500 group-hover:bg-black/40"></div>
@@ -1155,9 +1208,12 @@ function PremiumGallerySection() {
           className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 p-6 backdrop-blur-sm"
           onClick={() => setSelectedImage(null)}
         >
-          <img
+          <Image
             src={selectedImage}
             alt="Preview"
+            width={1600}
+            height={1200}
+            sizes="95vw"
             className="max-h-[90vh] max-w-full rounded-2xl shadow-2xl"
           />
         </div>
@@ -1224,9 +1280,12 @@ function DonationSection() {
                 </p>
 
              <div className="rounded-2xl bg-white p-4 shadow-lg w-[180px]">
-    <img
+    <Image
       src="/qr.jpeg"   // <-- place your QR image in public folder
       alt="Donation QR Code"
+      width={220}
+      height={220}
+      sizes="180px"
       className="w-full h-auto object-contain"
     />
   </div>
@@ -1377,9 +1436,12 @@ function Footer() {
           {/* Left: Logo + Name */}
           <div className="flex items-center gap-4">
             <div className="h-12 w-12 overflow-hidden rounded-xl bg-white/5 ring-1 ring-white/10">
-              <img
+              <Image
                 src="/LHE.png"
                 alt="LHE International Ministries"
+                width={48}
+                height={48}
+                sizes="48px"
                 className="h-full w-full object-contain p-1"
               />
             </div>
@@ -1546,9 +1608,12 @@ function Footer() {
     rel="noopener noreferrer"
     className="h-10 w-10 overflow-hidden rounded-lg bg-white/5 ring-1 ring-white/10 flex items-center justify-center hover:ring-[#d4af37]/50 transition"
   >
-    <img
+    <Image
       src="/logo.png"
       alt="P & J Technologies"
+      width={40}
+      height={40}
+      sizes="40px"
       className="h-full w-full object-contain p-1"
     />
   </a>

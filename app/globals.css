@@ -75,9 +75,29 @@ body {
   opacity: 1;
   transform: translateY(0);
 }
+
+@media (max-width: 768px) {
+  .reveal {
+    transform: translateY(22px) scale(0.98);
+    filter: blur(1.5px);
+  }
+
+  .reveal.is-visible {
+    transform: translateY(0) scale(1);
+    filter: blur(0);
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
+  }
+
+  .reveal,
+  .reveal.is-visible {
+    filter: none;
+    transform: none;
+    transition: none;
   }
 }
 
