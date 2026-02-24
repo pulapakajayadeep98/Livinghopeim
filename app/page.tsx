@@ -339,26 +339,30 @@ function AboutSection() {
 
 function MissionVisionTeamSection() {
   const teamMembers = [
-    {
-      name: " Prakash ",
-      role: "Pastor",
-      image: "/home1.png",
-    },
-    {
-      name: "Joshua",
-      role: "Pastor",
-      image: "/chaitanya.jpeg",
-    },
-    {
+        {
       name: "Jemimah Paul",
       role: "pastor",
       image: "/jemimah.png",
     },
-    {
+       {
       name: "Salluri Prakash",
       role: "Singer",
       image: "/prakash.png",
     },
+       {
+      name: "Joshua",
+      role: "Pastor",
+      image: "/chaitanya.jpeg",
+    },
+    
+    {
+      name: " Prakash ",
+      role: "Pastor",
+      image: "/",
+    },
+ 
+
+ 
     {
       name: "Bro.Sreedhar",
       role: "Team Member",
@@ -373,6 +377,11 @@ function MissionVisionTeamSection() {
       name: "Jeremiah",
       role: "Evangelist",
       image: "/jeremiah.jpeg",
+    },
+        {
+      name: "pradeep kumar",
+      role: "Evangelist",
+      image: "/pradeep.jpeg",
     },
   ];
 
@@ -1414,7 +1423,7 @@ function ContactSection() {
                 <p className="text-sm font-semibold uppercase tracking-wide text-white/70">
                   Email
                 </p>
-                <p className="mt-1">lhieveng@outlook.com</p>
+                <p className="mt-1">livinghopemission@outlook.com</p>
               </div>
               <div>
                 <p className="text-sm font-semibold uppercase tracking-wide text-white/70">
@@ -1518,7 +1527,7 @@ function Footer() {
                   />
                 </svg>
               </span>
-              <span className="font-medium">lhieveng@outlook.com</span>
+              <span className="font-medium">livinghopemission@outlook.com</span>
             </a>
           </div>
 
@@ -1542,7 +1551,7 @@ function Footer() {
 
             {/* Instagram */}
             <a
-              href="https://instagram.com"
+              href="https://www.instagram.com/pastormapaul?igsh=MWdxZ2Vlaml1bzRt"
               target="_blank"
               rel="noreferrer"
               aria-label="Instagram"
