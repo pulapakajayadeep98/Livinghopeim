@@ -14,7 +14,7 @@ const bodyFont = Source_Sans_3({
 });
 
 export const metadata: Metadata = {
-  title: "L H E International Ministries | Vijayawada Church",
+  title: "Living Hope Organisation | Vijayawada Church",
   description:
     "Spirit-filled church in Vijayawada. Sunday worship, Bible study & prayer meetings.",
      icons: {
