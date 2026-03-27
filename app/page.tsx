@@ -355,29 +355,11 @@ function MissionVisionTeamSection() {
       image: "/chaitanya.jpeg",
     },
     
-    {
-      name: " Prakash ",
-      role: "Pastor",
-      image: "/",
-    },
- 
+
 
  
-    {
-      name: "Bro.Sreedhar",
-      role: "Team Member",
-      image: "/sreedhar1.png",
-    },
-    {
-      name: "Samson",
-      role: "Evangelist",
-      image: "/samson.png",
-    },
-    {
-      name: "Jeremiah",
-      role: "Evangelist",
-      image: "/jeremiah.jpeg",
-    },
+
+    
         {
       name: "pradeep kumar",
       role: "Evangelist",
