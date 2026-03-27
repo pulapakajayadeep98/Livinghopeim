@@ -198,7 +198,7 @@ function HeroSection() {
 
             <div>
               <p className="font-serif text-lg font-semibold bg-gradient-to-r from-[#f8d86b] via-[#7ee8fa] to-[#c6ffdd] bg-clip-text text-transparent">
-                Living Hope Int. Evangelism
+                Living Hope Organisations
               </p>
               <p className="mt-1 text-xs uppercase tracking-[0.3em] text-white/60">
                 Giving hope to the hopeless
@@ -247,7 +247,7 @@ function HeroSection() {
           <h1 className="font-serif text-4xl font-semibold leading-tight sm:text-5xl lg:text-6xl">
             <span className="block text-white/90">Welcome To</span>
             <span className="block bg-gradient-to-r from-[#f8d86b] via-[#7ee8fa] to-[#c6ffdd] bg-clip-text text-transparent drop-shadow-[0_6px_18px_rgba(0,0,0,0.4)]">
-              LIVING HOPE Int. Evang
+              LIVING HOPE Organisation
             </span>
           </h1>
           <p className="mt-4 text-lg text-white/85 sm:text-xl">
