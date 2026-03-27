@@ -978,9 +978,9 @@ function PastorProfilePosterSection() {
           <p className="text-sm font-semibold uppercase tracking-[0.3em] text-[#4b2a7a]">
             Spiritual Mentor
           </p>
-          <h2 className="mt-4 text-4xl font-semibold text-[#0b1a3a]">Richard Tay</h2>
+          <h2 className="mt-4 text-4xl font-semibold text-[#0b1a3a]">Dr.Rev.Richard </h2>
           <p className="mt-4 text-2xl leading-9 text-[#1f3f74]">
-            Senior Pastor, Founder, Secretary
+            Senior Pastor
           </p>
          
 
