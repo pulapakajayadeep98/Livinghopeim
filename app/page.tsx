@@ -125,7 +125,7 @@ function HeroSection() {
 
             <div>
               <p className="font-serif text-lg font-semibold bg-gradient-to-r from-[#f8d86b] via-[#7ee8fa] to-[#c6ffdd] bg-clip-text text-transparent">
-                Living Hope Int. Evang
+                Living Hope Organisation
               </p>
            <p className="mt-1 text-[9px] uppercase tracking-[0.3em] text-white/60">
   Giving hope to the hopeless
