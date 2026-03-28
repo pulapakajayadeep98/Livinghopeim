@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     canonical: "https://livinghopein.org/",
   },
   icons: {
-    icon: "/favicon.ico", // replace with your real favicon path if different
+    icon: "/vercel.svg", // replace with your real favicon path if different
   },
   openGraph: {
     title: "Living Hope Organisation",
