@@ -15,7 +15,7 @@ const bodyFont = Source_Sans_3({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://livinghopein.org"),
-  title: "Living Hope Organisation | Vijayawada Church",
+  title: "Living Hope Organisation",
   description:
     "Living Hope Organisation is a spirit-filled church in Vijayawada offering Sunday worship, Bible study, prayer meetings, Christian fellowship, and spiritual growth.",
   keywords: [
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     "spirit-filled church Vijayawada",
     "Christian fellowship Vijayawada",
     "Jesus church Vijayawada",
-    "church near me Vijayawada"
+    "church near me Vijayawada",
   ],
   authors: [{ name: "Living Hope Organisation" }],
   creator: "Living Hope Organisation",
@@ -42,10 +42,10 @@ export const metadata: Metadata = {
     canonical: "https://livinghopein.org/",
   },
   icons: {
-    icon: "/vercel.svg", // replace this with your real favicon later
+    icon: "/favicon.ico", // replace with your real favicon path if different
   },
   openGraph: {
-    title: "Living Hope Organisation | Vijayawada Church",
+    title: "Living Hope Organisation",
     description:
       "Join Living Hope Organisation in Vijayawada for Sunday worship, Bible study, prayer meetings, and Christian fellowship.",
     url: "https://livinghopein.org/",
@@ -55,10 +55,27 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Living Hope Organisation | Vijayawada Church",
+    title: "Living Hope Organisation",
     description:
       "Spirit-filled church in Vijayawada with worship, Bible study, and prayer meetings.",
   },
+};
+
+const websiteJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "Living Hope Organisation",
+  alternateName: "Living Hope",
+  url: "https://livinghopein.org/",
+};
+
+const organizationJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "Living Hope Organisation",
+  alternateName: "Living Hope",
+  url: "https://livinghopein.org/",
+  logo: "https://livinghopein.org/favicon.ico",
 };
 
 export default function RootLayout({
@@ -71,6 +88,14 @@ export default function RootLayout({
       <body
         className={`${bodyFont.variable} ${headingFont.variable} antialiased bg-white text-slate-900`}
       >
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
+        />
         {children}
       </body>
     </html>
