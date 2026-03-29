@@ -1309,7 +1309,7 @@ function DonationSection() {
                   transaction details to:
                   <br />
                   <span className="font-semibold text-[#f1d27a]">
-                    lhievangelism@gmail.com
+                    livinghopeorganisation@gmail.com
                   </span>
                 </div>
               </div>
