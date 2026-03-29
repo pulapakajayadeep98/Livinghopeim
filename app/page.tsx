@@ -285,11 +285,11 @@ function AboutSection() {
               Welcome
             </p>
            <h2 className="mt-3 font-serif text-3xl font-semibold text-[#0b1a3a] sm:text-4xl">
-  About LIVING HOPE International Evangelism
+  About LIVING HOPE ORGANISATION
 </h2>
 
 <p className="mt-5 text-lg leading-8 text-slate-600">
-  LIVING HOPE International Evangelism is a Spirit-filled, Bible-based ministry committed to spreading the Gospel of Jesus Christ and building a strong community of believers. We exist to help people encounter God's presence, grow in faith through the Word, and live a transformed life through the power of the Holy Spirit.
+  LIVING HOPE ORGANISATION is a Spirit-filled, Bible-based ministry committed to spreading the Gospel of Jesus Christ and building a strong community of believers. We exist to help people encounter God's presence, grow in faith through the Word, and live a transformed life through the power of the Holy Spirit.
 </p>
 
 <p className="mt-4 text-lg leading-8 text-slate-600">
@@ -1412,9 +1412,9 @@ function ContactSection() {
                   Address
                 </p>
                 <p className="mt-1">
-                  Beside Indian Dental Hospital,
+                  Indian Dental Hospital building ,
                   <br />
-                  4th Line, Kedaraswaraopet,
+                  5th Line, Kedaraswaraopet,
                   <br />
                   Vijayawada - 520003
                 </p>
@@ -1462,7 +1462,7 @@ function Footer() {
 
             <div>
               <p className="font-serif text-lg font-semibold bg-gradient-to-r from-[#f8d86b] via-[#7ee8fa] to-[#c6ffdd] bg-clip-text text-transparent">
-                Living Hope International Evangelism
+                Living Hope Organisation
               </p>
               <p className="mt-1 text-xs uppercase tracking-[0.3em] text-white/60">
                 Giving hope to the hopeless
@@ -1489,7 +1489,7 @@ function Footer() {
             </a>
 
             <a
-              href="mailto:info@mapaulministries.org"
+              href="mailto:livinghopeorganisation@gmail.com"
               className="flex items-center gap-3 text-sm text-white/85 hover:text-[#f1d27a] transition"
             >
               <span className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-white/5 ring-1 ring-white/10">
@@ -1646,7 +1646,7 @@ function Footer() {
 </div>
           {/* Center: Copyright */}
           <p className="text-sm text-white/70 md:text-center">
-            2026 L H E International Ministries. All rights reserved.
+            2026 Living Hope Organisation. All rights reserved.
           </p>
 
           {/* Right: Designed & Developed */}
