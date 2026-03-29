@@ -1509,7 +1509,7 @@ function Footer() {
                   />
                 </svg>
               </span>
-              <span className="font-medium">livinghopemission@outlook.com</span>
+              <span className="font-medium">livinghopeorganisation@gmail.com</span>
             </a>
           </div>
 
