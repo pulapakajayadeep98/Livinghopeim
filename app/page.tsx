@@ -904,7 +904,7 @@ function TranslationMinistrySection() {
           </h2>
 
           <p className="mt-6 text-lg leading-8 text-slate-600">
-            Rev. M.A. Paul faithfully serves as a translator and ministry
+            Pastor. M.A. Paul faithfully serves as a translator and ministry
             partner during international conferences and special meetings
             conducted across India.
           </p>
