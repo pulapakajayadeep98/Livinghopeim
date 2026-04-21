@@ -967,7 +967,7 @@ function PastorProfilePosterSection() {
          
 
           <p className="mt-8 text-lg leading-8 text-slate-600">
-            Rev. M.A. Paul is a faith-filled leader and teacher who has
+            Pastor. M.A. Paul is a faith-filled leader and teacher who has
             dedicated his life to preaching the Gospel, guiding believers, and
             equipping the church with biblical truth and practical ministry.
           </p>
