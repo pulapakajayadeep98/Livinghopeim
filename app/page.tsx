@@ -1324,7 +1324,12 @@ function ContactSection() {
                 <p className="text-sm font-semibold uppercase tracking-wide text-white/70">
                   Email
                 </p>
-                <p className="mt-1">livinghopemission@outlook.com</p>
+                <a
+                  href="mailto:livinghopeorganisation@gmail.com"
+                  className="mt-1 block transition hover:text-[#f1d27a]"
+                >
+                  livinghopeorganisation@gmail.com
+                </a>
               </div>
               <div>
                 <p className="text-sm font-semibold uppercase tracking-wide text-white/70">

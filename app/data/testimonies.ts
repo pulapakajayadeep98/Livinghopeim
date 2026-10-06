@@ -72,6 +72,35 @@ export const testimonies: Testimony[] = [
     ],
   },
   {
+    title: "He Never Left Me",
+    name: "Mary",
+    detail: "healed of a severe skin disease",
+    images: [
+      {
+        src: "/mary.webp",
+        alt: "Mary sharing her testimony at Living Hope Church, holding a microphone and her Bible",
+      },
+    ],
+    telugu: [
+      "తల్లి మేరీ గారికి చర్మంపై భయంకరమైన వ్యాధి వచ్చింది. భరించలేనంత దుర్వాసనతో, పూర్తిగా వస్త్రాలు ధరించలేనంతగా కురుపులతో ఆమె శరీరమంతా నిండిపోయింది.",
+      "ఆ పరిస్థితిలో తనను ఇక ఎవరూ చూడరని, తన జీవితం ముగించుకోవడమే మంచిదని అనుకున్నారు. ఎవరికీ కనిపించకుండా వెళ్లి, ఒక లోతైన బావిలో దూకి చనిపోవాలని నిర్ణయించుకున్నారు. “ఎవరూ చూడరు యేసయ్యా, నేను చచ్చిపోతాను” అనుకున్నారు.",
+      "ఆమె బావిలోకి దూకారు. ఒకసారి మునిగారు, రెండుసార్లు మునిగారు. మూడోసారి మునిగేటప్పుడు ఎవరో తన చెయ్యి పట్టుకుని పైకి లాగుతున్నట్లు అనిపించింది.",
+      "అప్పుడు ఆమె, “నన్నెందుకు రక్షించావు?” అని అడిగారు. అందుకు యేసయ్య, “నన్ను ‘అయ్యా’ అని పిలిచావు కదమ్మా! అందుకే వచ్చాను” అని చెప్పినట్లు ఆమె సాక్ష్యమిస్తున్నారు. ఆ యేసయ్యే ఆమెను రక్షించారు.",
+      "ఈ లోకంలో తన పిల్లలు, తన చెల్లెలు, తన కుటుంబ సభ్యులు అందరూ ఆమెను చూసి అసహ్యించుకుని, ఆమెను విడిచిపెట్టారు. కానీ ఆ యేసయ్య మాత్రం ఆమెను ఎప్పుడూ విడిచిపెట్టలేదు.",
+      "దేవుని మహా కృపవలన ఆమె Living Hope Churchకు వచ్చారు. అక్కడ పాస్టర్ M. A. Paul గారు ఆమె కోసం ప్రార్థించారు. ఈ రోజు ఆమె శరీరంపై ఒక్క మచ్చ కూడా లేదు! యేసయ్య ఆమెను సంపూర్ణంగా స్వస్థపరిచారు.",
+      "ఆమె జీవితాన్ని మార్చినది దేవుని మహా కృప. ఆమెను రక్షించినది యేసయ్య ప్రేమ. ఆమెను స్వస్థపరిచినది యేసయ్య శక్తి. సర్వ మహిమ, ఘనత, స్తుతి యేసయ్యకే కలుగును గాక! ఆమెన్.",
+    ],
+    english: [
+      "Mary was struck by a terrible skin disease. Her whole body was covered with sores, with an unbearable smell, so badly that she could not even wear her clothes properly.",
+      "In that condition she thought no one would ever look at her again, and that it would be better to end her life. She decided to go where no one could see her and jump into a deep well. \"No one will look at me, Jesus. I am going to die,\" she thought.",
+      "She jumped into the well. She went under once, then a second time. As she went under the third time, she felt someone take hold of her hand and pull her up.",
+      "She asked, \"Why did you save me?\" She testifies that Jesus answered, \"You called out to me, my child. That is why I came.\" It was Jesus who saved her.",
+      "In this world her children, her younger sister and all her family were repelled by her and abandoned her. But Jesus never left her.",
+      "By the great grace of God she came to Living Hope Church, where Pastor M. A. Paul prayed for her. Today there is not a single mark on her body. Jesus has healed her completely.",
+      "It was the great grace of God that changed her life, the love of Jesus that saved her, and the power of Jesus that healed her. May all glory, honour and praise be to Jesus. Amen.",
+    ],
+  },
+  {
     title: "Caring For Widows",
     name: "Living Hope",
     detail: "sarees, blankets and groceries for widows",

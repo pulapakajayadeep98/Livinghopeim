@@ -223,10 +223,10 @@ export default function SubPageShell({
               9100067779
             </a>
             <a
-              href="mailto:livinghopemission@outlook.com"
+              href="mailto:livinghopeorganisation@gmail.com"
               className="transition hover:text-[#f1d27a]"
             >
-              livinghopemission@outlook.com
+              livinghopeorganisation@gmail.com
             </a>
           </div>
         </div>
