@@ -31,7 +31,10 @@ export default function LogoVideo({ className = "" }: { className?: string }) {
   return (
     <video
       ref={videoRef}
-      src="/lhlogo3.mp4"
+      src="/lhlogo.mp4"
+      // The finished logo shows at once while the small video loads.
+      poster="/lhlogo-poster.webp"
+      preload="auto"
       autoPlay
       muted
       playsInline

@@ -22,11 +22,11 @@ export const testimonies: Testimony[] = [
     detail: "4 years - shared by his mother",
     images: [
       {
-        src: "/test1.jpeg",
+        src: "/test1.webp",
         alt: "Gowtham sitting on a man's lap, both smiling",
       },
       {
-        src: "/test2.jpeg",
+        src: "/test2.webp",
         alt: "Gowtham's back during his illness in hospital",
         sensitive: true,
       },
@@ -50,11 +50,11 @@ export const testimonies: Testimony[] = [
     detail: "6 years and 4 years - shared by their aunt",
     images: [
       {
-        src: "/anil2.jpeg",
+        src: "/anil2.webp",
         alt: "Anil and Abhishek sitting together on a man's lap, smiling",
       },
       {
-        src: "/anil1.jpeg",
+        src: "/anil1.webp",
         alt: "One of the boys being fed a meal at the church",
       },
     ],

@@ -16,6 +16,9 @@ const iframeAllow =
 // recent messages, kept up to date from the YouTube channel.
 export default function HomeSermons() {
   const [data, setData] = useState<LiveData | null>(null);
+  // YouTube's heavy player is only loaded for a video the visitor taps;
+  // until then each video is a lightweight thumbnail.
+  const [playing, setPlaying] = useState<string[]>([]);
 
   useEffect(() => {
     let cancelled = false;
@@ -66,15 +69,47 @@ export default function HomeSermons() {
                       isLive ? "ring-4 ring-red-600" : ""
                     }`}
                   >
-                    <iframe
-                      className="aspect-video w-full"
-                      src={`https://www.youtube.com/embed/${video.id}`}
-                      title={video.title}
-                      allow={iframeAllow}
-                      allowFullScreen
-                      loading="lazy"
-                      referrerPolicy="strict-origin-when-cross-origin"
-                    />
+                    {playing.includes(video.id) ? (
+                      <iframe
+                        className="aspect-video w-full"
+                        src={`https://www.youtube.com/embed/${video.id}?autoplay=1`}
+                        title={video.title}
+                        allow={iframeAllow}
+                        allowFullScreen
+                        referrerPolicy="strict-origin-when-cross-origin"
+                      />
+                    ) : (
+                      <button
+                        type="button"
+                        onClick={() =>
+                          setPlaying((current) => [...current, video.id])
+                        }
+                        aria-label={`Play ${video.title}`}
+                        className="group relative block aspect-video w-full"
+                      >
+                        {/* eslint-disable-next-line @next/next/no-img-element */}
+                        <img
+                          src={`https://i.ytimg.com/vi/${video.id}/hqdefault.jpg`}
+                          alt=""
+                          loading="lazy"
+                          decoding="async"
+                          className="h-full w-full object-cover"
+                        />
+                        <span className="absolute inset-0 flex items-center justify-center bg-black/20 transition-colors group-hover:bg-black/35">
+                          <span className="flex h-16 w-16 items-center justify-center rounded-full bg-red-600 text-white shadow-lg transition-transform group-hover:scale-110">
+                            <svg
+                              width="26"
+                              height="26"
+                              viewBox="0 0 24 24"
+                              fill="currentColor"
+                              aria-hidden="true"
+                            >
+                              <path d="M8 5v14l11-7z" />
+                            </svg>
+                          </span>
+                        </span>
+                      </button>
+                    )}
                   </div>
                   <div className="mt-4 flex items-start gap-3">
                     {isLive ? (

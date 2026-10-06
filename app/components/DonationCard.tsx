@@ -52,7 +52,7 @@ export default function DonationCard() {
           </p>
           <div className="mt-4 w-[180px] rounded-2xl bg-white p-4 shadow-lg">
             <Image
-              src="/qr.jpeg"
+              src="/qr.webp"
               alt="Donation QR Code"
               width={220}
               height={220}

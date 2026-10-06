@@ -86,7 +86,7 @@ function HeroSection() {
     <section id="home" className="relative min-h-[90vh] overflow-hidden">
       <div className="absolute inset-0">
         <Image
-          src="/home1.png"
+          src="/home1.webp"
           alt="Hero background slide 1"
           fill
           priority
@@ -94,14 +94,14 @@ function HeroSection() {
           className="hero-slide slide-1 object-cover"
         />
         <Image
-          src="/home2.JPG"
+          src="/home2.webp"
           alt="Hero background slide 2"
           fill
           sizes="100vw"
           className="hero-slide slide-2 object-cover"
         />
         <Image
-          src="/home3.png"
+          src="/home3.webp"
           alt="Hero background slide 3"
           fill
           sizes="100vw"
@@ -180,7 +180,7 @@ function HeroSection() {
     <div className="flex items-center gap-4">
             <div className="h-12 w-28 shrink-0 overflow-hidden rounded-xl bg-white ring-1 ring-white/10">
               <Image
-                src="/lhlog.png"
+                src="/lhlog.webp"
                 alt="Living Hope"
                 width={126}
                 height={48}
@@ -304,7 +304,7 @@ function AboutSection() {
         <Reveal className="lg:justify-self-end">
           <div className="relative overflow-hidden rounded-3xl shadow-[0_18px_40px_rgba(11,26,58,0.2)]">
             <Image
-              src="/anil.png"
+              src="/anil.webp"
               alt="Congregation worshipping"
               width={520}
               height={640}
@@ -335,17 +335,17 @@ function MissionVisionTeamSection() {
         {
       name: "Jemimah Paul",
       role: "pastor",
-      image: "/jemimah.png",
+      image: "/jemimah.webp",
     },
        {
       name: "Salluri Prakash",
       role: "Singer",
-      image: "/prakash.png",
+      image: "/prakash.webp",
     },
        {
       name: "Joshua",
       role: "Pastor",
-      image: "/chaitanya.jpeg",
+      image: "/chaitanya.webp",
     },
     
 
@@ -356,7 +356,7 @@ function MissionVisionTeamSection() {
         {
       name: "pradeep kumar",
       role: "Evangelist",
-      image: "/pradeep.jpeg",
+      image: "/pradeep.webp",
     },
   ];
 
@@ -494,7 +494,7 @@ function MissionVisionTeamSection() {
                     width={520}
                     height={520}
                     sizes="(max-width: 1024px) 50vw, 25vw"
-                    className={`h-full w-full object-cover ${member.image === "/sreedhar1.png" ? "object-[center_18%] sm:object-[center_15%]" : "object-top sm:object-center"}`}
+                    className={`h-full w-full object-cover ${member.image === "/sreedhar1.webp" ? "object-[center_18%] sm:object-[center_15%]" : "object-top sm:object-center"}`}
                   />
                 </div>
 
@@ -522,7 +522,7 @@ function MinistryActivitiesSection() {
   {/* Background Image */}
   <div className="absolute inset-0">
     <Image
-      src="/baptism13.png"
+      src="/baptism13.webp"
       alt="Church Activities"
       fill
       sizes="100vw"
@@ -555,7 +555,7 @@ function ChildrenMinistrySection() {
 
         <div>
           <Image
-            src="/child.jpeg"
+            src="/child.webp"
             alt="Children Ministry"
             width={1200}
             height={900}
@@ -612,7 +612,7 @@ function BibleTrainingSection() {
 
       <div className="mt-10 overflow-hidden rounded-3xl shadow-[0_20px_40px_rgba(0,0,0,0.12)]">
         <Image
-          src="/bibletraining.png"
+          src="/bibletraining.webp"
           alt="Bible Training"
           width={1400}
           height={900}
@@ -776,7 +776,7 @@ function ReachingSocietySection() {
           {/* BACK IMAGE (Village / Outreach) */}
           <div className="relative w-full rounded-3xl overflow-hidden shadow-[0_20px_50px_rgba(11,26,58,0.15)] md:absolute md:top-0 md:left-0 md:w-[70%]">
             <Image
-              src="/outreach.jpeg"
+              src="/outreach.webp"
               alt="Village Outreach"
               width={1200}
               height={900}
@@ -788,7 +788,7 @@ function ReachingSocietySection() {
           {/* FRONT IMAGE (Blanket Helping Image) */}
           <div className="relative mt-6 w-full rounded-3xl overflow-hidden border-8 border-white shadow-[0_25px_60px_rgba(11,26,58,0.25)] md:absolute md:bottom-0 md:right-0 md:mt-0 md:w-[75%] md:z-10">
             <Image
-              src="/floods.jpeg"
+              src="/floods.webp"
               alt="Relief Support"
               width={1200}
               height={900}
@@ -850,7 +850,7 @@ function TranslationMinistrySection() {
           {/* Large Left Image */}
           <div className="col-span-2 rounded-3xl overflow-hidden shadow-[0_20px_50px_rgba(11,26,58,0.15)]">
             <Image
-              src="/gal1.png"
+              src="/gal1.webp"
               alt="Conference Translation"
               width={1200}
               height={700}
@@ -862,7 +862,7 @@ function TranslationMinistrySection() {
           {/* Bottom Left */}
           <div className="rounded-3xl overflow-hidden shadow-[0_15px_40px_rgba(11,26,58,0.12)]">
             <Image
-              src="/gal2.png"
+              src="/gal2.webp"
               alt="Church Meeting"
               width={800}
               height={600}
@@ -874,7 +874,7 @@ function TranslationMinistrySection() {
           {/* Bottom Right */}
           <div className="rounded-3xl overflow-hidden shadow-[0_15px_40px_rgba(11,26,58,0.12)]">
             <Image
-              src="/trans3.jpeg"
+              src="/trans3.webp"
               alt="Ministry Conference"
               width={800}
               height={600}
@@ -929,7 +929,7 @@ function PastorProfilePosterSection() {
         <div className="relative">
           <div className="overflow-hidden rounded-3xl shadow-[0_22px_55px_rgba(11,26,58,0.18)]">
             <Image
-              src="/lh1.jpeg"
+              src="/lh1.webp"
               alt="M.A. Paul ministry portrait"
               width={900}
               height={1100}
@@ -939,7 +939,7 @@ function PastorProfilePosterSection() {
           </div>
           <div className="absolute -bottom-8 -right-6 hidden w-44 overflow-hidden rounded-2xl border-4 border-white shadow-[0_16px_30px_rgba(11,26,58,0.2)] sm:block">
             <Image
-              src="/lh2.jpeg"
+              src="/lh2.webp"
               alt="M.A. Paul during ministry"
               width={400}
               height={500}
@@ -977,7 +977,7 @@ function PrayerSupportSection() {
   {/* Background Image */}
   <div className="absolute inset-0">
     <Image
-      src="/prayer.png"
+      src="/prayer.webp"
       alt="Prayer support background"
       fill
       sizes="100vw"
@@ -1111,13 +1111,13 @@ function PremiumGallerySection() {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   const images = [
-    "/galary1.jpeg",
-    "/galary2.png",
+    "/galary1.webp",
+    "/galary2.webp",
    
-    "/galary4.jpeg",
-    "/galary5.jpeg",
-    "/galary6.jpeg",
-     "/galary3.jpeg",
+    "/galary4.webp",
+    "/galary5.webp",
+    "/galary6.webp",
+     "/galary3.webp",
   ];
 
   return (
@@ -1245,7 +1245,7 @@ function DonationSection() {
 
              <div className="rounded-2xl bg-white p-4 shadow-lg w-[180px]">
     <Image
-      src="/qr.jpeg"   // <-- place your QR image in public folder
+      src="/qr.webp"   // <-- place your QR image in public folder
       alt="Donation QR Code"
       width={220}
       height={220}
@@ -1370,7 +1370,7 @@ function Footer() {
           <div className="flex items-center gap-4">
             <div className="h-12 w-28 shrink-0 overflow-hidden rounded-xl bg-white ring-1 ring-white/10">
               <Image
-                src="/lhlog.png"
+                src="/lhlog.webp"
                 alt="Living Hope"
                 width={126}
                 height={48}
@@ -1542,7 +1542,7 @@ function Footer() {
     className="h-10 w-10 overflow-hidden rounded-lg bg-white/5 ring-1 ring-white/10 flex items-center justify-center hover:ring-[#d4af37]/50 transition"
   >
     <Image
-      src="/logo.png"
+      src="/logo.webp"
       alt="P & J Technologies"
       width={40}
       height={40}
