@@ -13,6 +13,7 @@ export const services: Service[] = [
   { title: "Sunday School", day: 0, hour: 16, minute: 0, durationMinutes: 90 },
   { title: "Bible Classes", day: 3, hour: 10, minute: 30, durationMinutes: 120 },
   { title: "Healing Service", day: 3, hour: 19, minute: 0, durationMinutes: 120 },
+  { title: "Day Cell", day: 4, hour: 19, minute: 0, durationMinutes: 60 },
   {
     title: "Fasting Prayer & Bible Study",
     day: 5,

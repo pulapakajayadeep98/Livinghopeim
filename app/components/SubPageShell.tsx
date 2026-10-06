@@ -96,7 +96,9 @@ export default function SubPageShell({
             </Link>
 
             <a
-              href="tel:9100067779"
+              href="https://wa.me/917997167779"
+              target="_blank"
+              rel="noreferrer"
               className="rounded-full bg-[#d4af37] px-5 py-2 text-xs font-semibold uppercase tracking-wide text-[#0b1a3a] shadow-lg shadow-[#d4af37]/40 transition-all hover:-translate-y-0.5"
             >
               Request Prayer
@@ -217,10 +219,12 @@ export default function SubPageShell({
           </div>
           <div className="flex flex-col gap-1 md:items-end">
             <a
-              href="tel:+919100067779"
+              href="https://wa.me/917997167779"
+              target="_blank"
+              rel="noreferrer"
               className="transition hover:text-[#f1d27a]"
             >
-              9100067779
+              7997167779
             </a>
             <a
               href="mailto:livinghopeorganisation@gmail.com"

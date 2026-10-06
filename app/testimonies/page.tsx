@@ -171,10 +171,12 @@ export default function TestimoniesPage() {
             others.
           </p>
           <a
-            href="tel:+919100067779"
+            href="https://wa.me/917997167779"
+            target="_blank"
+            rel="noreferrer"
             className="mt-6 inline-block rounded-full bg-[#d4af37] px-6 py-3 text-xs font-semibold uppercase tracking-wide text-[#0b1a3a] shadow-lg shadow-[#d4af37]/40 transition-all hover:-translate-y-0.5"
           >
-            Call 9100067779
+            WhatsApp 7997167779
           </a>
         </div>
       </div>

@@ -141,7 +141,9 @@ function HeroSection() {
       </a>
 
       <a
-        href="tel:9100067779"
+        href="https://wa.me/917997167779"
+        target="_blank"
+        rel="noreferrer"
         className="rounded-full bg-[#d4af37] px-5 py-2 text-xs font-semibold uppercase tracking-wide text-[#0b1a3a] shadow-lg shadow-[#d4af37]/40 transition-all hover:-translate-y-0.5"
       >
         Request Prayer
@@ -970,6 +972,65 @@ function PastorProfilePosterSection() {
   );
 }
 
+function BookSection() {
+  const orderMessage =
+    "Praise the Lord! I would like to order the book \"ప్రార్థన యొక్క అద్భుతమైన ఫలితాలు\" (testimony of Sr. Pastor Richard Tay).";
+
+  return (
+    <section id="book" className="bg-[#f8f6f2] py-24">
+      <div className="mx-auto grid w-full max-w-6xl gap-12 px-6 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
+        <div className="overflow-hidden rounded-3xl shadow-[0_22px_55px_rgba(11,26,58,0.18)]">
+          <Image
+            src="/book.webp"
+            alt="Front and back cover of the Telugu book on the life testimony of Pastor Richard Tay"
+            width={1115}
+            height={780}
+            sizes="(max-width: 1024px) 100vw, 50vw"
+            className="h-auto w-full"
+          />
+        </div>
+
+        <div>
+          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-[#4b2a7a]">
+            Our Book - 1st Edition
+          </p>
+          <h2
+            lang="te"
+            className="mt-3 font-serif text-4xl font-semibold leading-snug text-[#0b1a3a]"
+          >
+            ప్రార్థన యొక్క అద్భుతమైన ఫలితాలు
+          </h2>
+          <p className="mt-6 text-lg leading-8 text-slate-600">
+            The life testimony of Sr. Pastor Richard Tay, translated into
+            Telugu by Pastor. M.A. Paul.
+          </p>
+          <p className="mt-4 text-lg leading-8 text-slate-600">
+            To order a copy, send us a message on WhatsApp.
+          </p>
+
+          <a
+            href={`https://wa.me/917997167779?text=${encodeURIComponent(orderMessage)}`}
+            target="_blank"
+            rel="noreferrer"
+            className="mt-8 inline-flex items-center gap-3 rounded-full bg-[#d4af37] px-7 py-3 text-sm font-semibold uppercase tracking-wide text-[#0b1a3a] shadow-lg shadow-[#d4af37]/40 transition-all hover:-translate-y-0.5"
+          >
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+              <path
+                d="M12 3a9 9 0 0 0-7.8 13.5L3 21l4.7-1.2A9 9 0 1 0 12 3Z"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinejoin="round"
+              />
+            </svg>
+            Order on WhatsApp
+          </a>
+          <p className="mt-4 text-sm text-slate-500">WhatsApp: 7997167779</p>
+        </div>
+      </div>
+    </section>
+  );
+}
+
 function PrayerSupportSection() {
   return (
   <section className="relative py-20 text-white">
@@ -1006,7 +1067,9 @@ function PrayerSupportSection() {
 
     <div className="mt-8">
       <a
-        href="tel:+919100067779"
+        href="https://wa.me/917997167779"
+        target="_blank"
+        rel="noreferrer"
         className="rounded-full bg-[#d4af37] px-8 py-3 text-sm font-semibold uppercase tracking-wide text-[#0b1a3a] shadow-lg shadow-[#d4af37]/40 transition-transform hover:-translate-y-1"
       >
         Request Prayer Now
@@ -1315,10 +1378,16 @@ function ContactSection() {
             <div className="mt-8 space-y-6 text-lg text-white/85">
               <div>
                 <p className="text-sm font-semibold uppercase tracking-wide text-white/70">
-                  Phone
+                  WhatsApp
                 </p>
-                <p className="mt-1">9100067779</p>
-                <p>9948818009</p>
+                <a
+                  href="https://wa.me/917997167779"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="mt-1 block transition hover:text-[#f1d27a]"
+                >
+                  7997167779
+                </a>
               </div>
               <div>
                 <p className="text-sm font-semibold uppercase tracking-wide text-white/70">
@@ -1394,17 +1463,25 @@ function Footer() {
             </div>
           </div>
 
-          {/* Middle: Phone + Email */}
+          {/* Middle: WhatsApp + Email */}
           <div className="flex flex-col gap-3 md:items-center">
             <a
-              href="tel:+919100067779"
+              href="https://wa.me/917997167779"
+              target="_blank"
+              rel="noreferrer"
               className="flex items-center gap-3 text-sm text-white/85 hover:text-[#f1d27a] transition"
             >
               <span className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-white/5 ring-1 ring-white/10">
-                {/* phone icon */}
+                {/* WhatsApp icon */}
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
                   <path
-                    d="M6.5 3.75h2.2c.6 0 1.1.4 1.2 1l.5 3c.1.6-.2 1.2-.8 1.4l-1.5.6c.8 1.6 2.2 3 3.8 3.8l.6-1.5c.2-.6.8-.9 1.4-.8l3 .5c.6.1 1 .6 1 1.2v2.2c0 .7-.6 1.3-1.3 1.2C11 20.8 3.2 13 3.3 5.1c0-.7.6-1.3 1.2-1.3z"
+                    d="M12 3a9 9 0 0 0-7.8 13.5L3 21l4.7-1.2A9 9 0 1 0 12 3Z"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinejoin="round"
+                  />
+                  <path
+                    d="M9.6 8.9c.2-.4.4-.4.7-.4h.6c.2 0 .4.1.5.4l.8 1.9c.1.2.1.4-.1.6l-.5.6c-.1.1-.1.3 0 .4.6 1.1 1.5 2 2.6 2.6.1.1.3.1.4 0l.6-.5c.2-.2.4-.2.6-.1l1.9.8c.3.1.4.3.4.5v.6c0 .3 0 .5-.4.7-.5.3-1.5.6-3.1 0-2.2-.8-4.6-3.1-5.4-5.4-.6-1.6-.3-2.6 0-3.1Z"
                     fill="currentColor"
                   />
                 </svg>
@@ -1441,7 +1518,7 @@ function Footer() {
           <div className="flex items-center gap-3 md:justify-end">
             {/* Facebook */}
             <a
-              href="https://facebook.com"
+              href="https://www.facebook.com/LIVINGHOPEINORG"
               target="_blank"
               rel="noreferrer"
               aria-label="Facebook"
@@ -1457,7 +1534,7 @@ function Footer() {
 
             {/* Instagram */}
             <a
-              href="https://www.instagram.com/pastormapaul?igsh=MWdxZ2Vlaml1bzRt"
+              href="https://www.instagram.com/livinghope_in"
               target="_blank"
               rel="noreferrer"
               aria-label="Instagram"
@@ -1501,7 +1578,7 @@ function Footer() {
 
             {/* WhatsApp */}
             <a
-              href="https://wa.me/919100067779"
+              href="https://wa.me/917997167779"
               target="_blank"
               rel="noreferrer"
               aria-label="WhatsApp"
@@ -1581,10 +1658,12 @@ function Footer() {
   );
 }
 
-function FloatingPrayerCallButton() {
+function FloatingPrayerWhatsAppButton() {
   return (
     <a
-      href="tel:9100067779"
+      href="https://wa.me/917997167779"
+      target="_blank"
+      rel="noreferrer"
       aria-label="Request Online Prayer"
       className="fixed bottom-6 right-6 z-50 inline-flex items-center gap-3 rounded-full bg-[#d4af37] px-4 py-3 text-sm font-semibold uppercase tracking-wide text-[#0b1a3a] shadow-[0_14px_30px_rgba(212,175,55,0.45)] transition-transform hover:-translate-y-0.5"
     >
@@ -1597,7 +1676,13 @@ function FloatingPrayerCallButton() {
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
-            d="M6.5 3.75h2.2c.6 0 1.1.4 1.2 1l.5 3c.1.6-.2 1.2-.8 1.4l-1.5.6c.8 1.6 2.2 3 3.8 3.8l.6-1.5c.2-.6.8-.9 1.4-.8l3 .5c.6.1 1 .6 1 1.2v2.2c0 .7-.6 1.3-1.3 1.2C11 20.8 3.2 13 3.3 5.1c0-.7.6-1.3 1.2-1.3z"
+            d="M12 3a9 9 0 0 0-7.8 13.5L3 21l4.7-1.2A9 9 0 1 0 12 3Z"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinejoin="round"
+          />
+          <path
+            d="M9.6 8.9c.2-.4.4-.4.7-.4h.6c.2 0 .4.1.5.4l.8 1.9c.1.2.1.4-.1.6l-.5.6c-.1.1-.1.3 0 .4.6 1.1 1.5 2 2.6 2.6.1.1.3.1.4 0l.6-.5c.2-.2.4-.2.6-.1l1.9.8c.3.1.4.3.4.5v.6c0 .3 0 .5-.4.7-.5.3-1.5.6-3.1 0-2.2-.8-4.6-3.1-5.4-5.4-.6-1.6-.3-2.6 0-3.1Z"
             fill="currentColor"
           />
         </svg>
@@ -1630,6 +1715,7 @@ export default function Home() {
       <ReachingSocietySection />
 <TranslationMinistrySection />
       <PastorProfilePosterSection />
+      <BookSection />
 
       <PrayerSupportSection />
       <TestimonialSection />
@@ -1638,7 +1724,7 @@ export default function Home() {
       <SermonSection />
       <ContactSection />
       <Footer />
-      <FloatingPrayerCallButton />
+      <FloatingPrayerWhatsAppButton />
     </main>
   );
 }
