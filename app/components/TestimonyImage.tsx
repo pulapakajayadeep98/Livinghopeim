@@ -7,9 +7,11 @@ import type { TestimonyImage as TestimonyImageData } from "../data/testimonies";
 export default function TestimonyImage({
   image,
   className = "",
+  sizes = "(max-width: 1024px) 100vw, 40vw",
 }: {
   image: TestimonyImageData;
   className?: string;
+  sizes?: string;
 }) {
   const [revealed, setRevealed] = useState(!image.sensitive);
 
@@ -21,7 +23,7 @@ export default function TestimonyImage({
         src={image.src}
         alt={image.alt}
         fill
-        sizes="(max-width: 1024px) 100vw, 40vw"
+        sizes={sizes}
         className={`object-cover transition duration-500 ${
           revealed ? "" : "scale-110 blur-2xl"
         }`}

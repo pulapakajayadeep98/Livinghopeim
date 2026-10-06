@@ -10,6 +10,8 @@ export type Testimony = {
   name: string;
   detail?: string;
   images: TestimonyImage[];
+  // Puts the photos above the text instead of beside it. Use for wide photos.
+  stacked?: boolean;
   telugu: string[];
   english: string[];
 };
@@ -75,6 +77,7 @@ export const testimonies: Testimony[] = [
     title: "He Never Left Me",
     name: "Mary",
     detail: "healed of a severe skin disease",
+    stacked: true,
     images: [
       {
         src: "/mary.webp",

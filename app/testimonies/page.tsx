@@ -73,12 +73,12 @@ export default function TestimoniesPage() {
 
                 <div
                   className={`grid gap-8 p-6 sm:p-10 lg:gap-12 ${
-                    testimony.images.length
+                    testimony.images.length && !testimony.stacked
                       ? "lg:grid-cols-[0.8fr_1.2fr]"
                       : ""
                   }`}
                 >
-                  {/* Left: photos */}
+                  {/* Left: photos (above the text for a stacked testimony) */}
                   {/* On desktop the photos stretch to the full height of the text */}
                   {testimony.images.length ? (
                     <div
@@ -92,8 +92,15 @@ export default function TestimoniesPage() {
                         <TestimonyImage
                           key={image.src}
                           image={image}
+                          sizes={
+                            testimony.stacked
+                              ? "(max-width: 768px) 100vw, 768px"
+                              : undefined
+                          }
                           className={
-                            testimony.images.length > 1
+                            testimony.stacked
+                              ? "mx-auto aspect-video w-full max-w-3xl"
+                              : testimony.images.length > 1
                               ? "aspect-[4/5] lg:aspect-auto lg:min-h-[260px]"
                               : "aspect-[4/3] lg:aspect-auto lg:min-h-[260px]"
                           }
