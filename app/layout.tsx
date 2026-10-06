@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import { Playfair_Display, Source_Sans_3 } from "next/font/google";
+import PromisePopup from "./components/PromisePopup";
 import "./globals.css";
 
 const headingFont = Playfair_Display({
@@ -40,9 +41,6 @@ export const metadata: Metadata = {
   applicationName: "Living Hope Organisation",
   alternates: {
     canonical: "https://livinghopein.org/",
-  },
-  icons: {
-    icon: "/vercel.svg", // replace with your real favicon path if different
   },
   openGraph: {
     title: "Living Hope Organisation",
@@ -97,6 +95,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
         />
         {children}
+        <PromisePopup />
       </body>
     </html>
   );

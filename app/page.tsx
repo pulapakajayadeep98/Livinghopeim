@@ -2,14 +2,18 @@
 
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
+import HomeSermons from "./components/HomeSermons";
+import LogoVideo from "./components/LogoVideo";
+import ServiceSchedule from "./components/ServiceSchedule";
 
 const navLinks = [
   { label: "Home", href: "#home" },
   { label: "About", href: "#about" },
-  { label: "Ministries", href: "#ministries" },
-  { label: "Services", href: "#services" },
-  { label: "Sermons", href: "#sermons" },
-  { label: "Gallery", href: "#gallery" },
+  { label: "Testimonies", href: "/testimonies" },
+  { label: "Today's Promise", href: "/promises" },
+  { label: "Updates", href: "/updates" },
+  { label: "Watch Live", href: "/watch-live" },
+  { label: "Gallery", href: "/gallery" },
   { label: "Donate", href: "#donate" },
   { label: "Contact", href: "#contact" },
 ];
@@ -111,41 +115,30 @@ function HeroSection() {
 
     {/* Logo - Properly aligned left top */}
     <div className="flex items-center">
-      <div className="flex items-center gap-4">
-            <div className="h-12 w-12 overflow-hidden rounded-xl bg-white/5 ring-1 ring-white/10">
-              <Image
-                src="/lh.png"
-                alt="LHE International Ministries"
-                width={48}
-                height={48}
-                sizes="48px"
-                className="h-full w-full object-contain p-1"
-              />
-            </div>
-
-            <div>
-              <p className="font-serif text-lg font-semibold bg-gradient-to-r from-[#f8d86b] via-[#7ee8fa] to-[#c6ffdd] bg-clip-text text-transparent">
-                Living Hope Organisation
-              </p>
-           <p className="mt-1 text-[9px] uppercase tracking-[0.3em] text-white/60">
-  Giving hope to the hopeless
-</p>
-            </div>
-          </div>
+      <LogoVideo className="h-16 w-auto rounded-xl" />
     </div>
 
     {/* Desktop Navigation */}
-    <nav className="hidden md:flex items-center gap-8 text-sm font-semibold uppercase tracking-widest text-white/80">
-      {navLinks.map((link) => (
+    <nav className="hidden lg:flex items-center gap-4 xl:gap-6 whitespace-nowrap text-xs xl:text-sm font-semibold uppercase tracking-widest text-white/80">
+      {navLinks
+        .filter((link) => link.href !== "/watch-live")
+        .map((link) => (
         <a
           key={link.href}
           href={link.href}
           onClick={(event) => handleNavClick(event, link.href)}
-          className="transition-colors hover:text-[#f1d27a]"
+          className="transition-colors hover:text-[#5ab4f0]"
         >
           {link.label}
         </a>
       ))}
+
+      <a
+        href="/watch-live"
+        className="rounded-full bg-white px-5 py-2 text-xs font-semibold uppercase tracking-wide text-[#0b1a3a] shadow-lg shadow-black/20 transition-all hover:-translate-y-0.5"
+      >
+        Watch Live
+      </a>
 
       <a
         href="tel:9100067779"
@@ -159,7 +152,7 @@ function HeroSection() {
     <button
       type="button"
       onClick={() => setMobileOpen(true)}
-      className="md:hidden rounded-full border border-white/40 p-2 text-white transition-colors hover:border-[#f1d27a] hover:text-[#f1d27a]"
+      className="lg:hidden rounded-full border border-white/40 p-2 text-white transition-colors hover:border-[#f1d27a] hover:text-[#f1d27a]"
       aria-label="Open navigation menu"
     >
       <svg
@@ -181,17 +174,17 @@ function HeroSection() {
 </header>
 
         {mobileOpen ? (
-          <div className="fixed inset-0 z-50 bg-[#0b1a3a]/95 backdrop-blur-sm md:hidden">
+          <div className="fixed inset-0 z-50 bg-[#0b1a3a]/95 backdrop-blur-sm lg:hidden">
             <div className="flex items-center justify-between px-6 pt-6">
             <div className="flex items-center gap-3">
     <div className="flex items-center gap-4">
-            <div className="h-12 w-12 overflow-hidden rounded-xl bg-white/5 ring-1 ring-white/10">
+            <div className="h-12 w-28 shrink-0 overflow-hidden rounded-xl bg-white ring-1 ring-white/10">
               <Image
-                src="/lh.png"
-                alt="LHE International Ministries"
-                width={48}
+                src="/lhlog.png"
+                alt="Living Hope"
+                width={126}
                 height={48}
-                sizes="48px"
+                sizes="112px"
                 className="h-full w-full object-contain p-1"
               />
             </div>
@@ -234,7 +227,7 @@ function HeroSection() {
                   key={link.href}
                   href={link.href}
                   onClick={(event) => handleNavClick(event, link.href)}
-                  className="transition-colors hover:text-[#f1d27a]"
+                  className="transition-colors hover:text-[#5ab4f0]"
                 >
                   {link.label}
                 </a>
@@ -529,7 +522,7 @@ function MinistryActivitiesSection() {
   {/* Background Image */}
   <div className="absolute inset-0">
     <Image
-      src="/baptism.png"
+      src="/baptism13.png"
       alt="Church Activities"
       fill
       sizes="100vw"
@@ -689,19 +682,19 @@ function StatementOfFaith() {
         "Holiness is God's standard of living for His people.",
     },
     {
-      title: "Baptism of the Holy Spirit",
+      title: "baptism13 of the Holy Spirit",
       content:
-        "The baptism with the Holy Spirit is an experience subsequent to salvation, given to believers who have been cleansed in heart.",
+        "The baptism13 with the Holy Spirit is an experience subsequent to salvation, given to believers who have been cleansed in heart.",
     },
     {
       title: "Speaking in Tongues",
       content:
-        "Speaking with other tongues as the Spirit gives utterance is the initial evidence of the baptism of the Holy Spirit.",
+        "Speaking with other tongues as the Spirit gives utterance is the initial evidence of the baptism13 of the Holy Spirit.",
     },
     {
-      title: "Water Baptism",
+      title: "Water baptism13",
       content:
-        "Water baptism by immersion is commanded in Scripture. All who repent should be baptized in the name of the Father, the Son, and the Holy Spirit.",
+        "Water baptism13 by immersion is commanded in Scripture. All who repent should be baptized in the name of the Father, the Son, and the Holy Spirit.",
     },
     {
       title: "Divine Healing",
@@ -1026,24 +1019,6 @@ function PrayerSupportSection() {
 }
 
 function ServicesSection() {
-  const services = [
-    {
-      title: "Sunday Service",
-      time: "9:30 AM - 12:00 PM",
-      description: "Celebrate worship and the Word together as a church family.",
-    },
-    {
-      title: "Wednesday Bible Study",
-      time: "6:30 PM - 8:30 PM",
-      description: "Midweek teaching for deeper spiritual growth and fellowship.",
-    },
-    {
-      title: "Friday Fasting Prayer",
-      time: "6:30 PM - 8:30 PM",
-      description: "Dedicated prayer and fasting for renewal and breakthrough.",
-    },
-  ];
-
   return (
     <section id="sermons" className="bg-[#f8f5ff] py-20">
       <div className="mx-auto w-full max-w-6xl px-6">
@@ -1057,48 +1032,14 @@ function ServicesSection() {
             </h2>
           </div>
         </Reveal>
-        <div className="mt-12 grid gap-6 md:grid-cols-3">
-          {services.map((service) => (
-            <Reveal key={service.title}>
-              <div className="flex h-full flex-col gap-4 rounded-2xl bg-white p-6 shadow-[0_15px_35px_rgba(11,26,58,0.12)]">
-                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[#fff3cc]">
-                  <svg
-                    width="22"
-                    height="22"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M12 5v14M7 9h10"
-                      stroke="#d4af37"
-                      strokeWidth="2.5"
-                      strokeLinecap="round"
-                    />
-                  </svg>
-                </div>
-                <div>
-                  <h3 className="font-serif text-xl font-semibold text-[#0b1a3a]">
-                    {service.title}
-                  </h3>
-                  <p className="mt-2 text-sm font-semibold uppercase tracking-wide text-[#4b2a7a]">
-                    {service.time}
-                  </p>
-                  <p className="mt-3 text-base text-slate-600">
-                    {service.description}
-                  </p>
-                </div>
-              </div>
-            </Reveal>
-          ))}
-        </div>
+        <ServiceSchedule />
       </div>
     </section>
   );
 }
 function TestimonialSection() {
   return (
-    <section className="py-28 bg-white">
+    <section id="testimonies" className="py-28 bg-white">
       <div className="max-w-6xl mx-auto px-6">
 
         <div className="rounded-3xl bg-gradient-to-br from-[#241246] to-[#0b1a3a] text-white shadow-[0_25px_60px_rgba(11,26,58,0.25)] p-12 relative overflow-hidden">
@@ -1213,6 +1154,15 @@ function PremiumGallerySection() {
               <div className="absolute inset-0 bg-black/0 transition duration-500 group-hover:bg-black/40"></div>
             </div>
           ))}
+        </div>
+
+        <div className="mt-10 text-center">
+          <a
+            href="/gallery"
+            className="inline-block rounded-full bg-[#d4af37] px-6 py-3 text-xs font-semibold uppercase tracking-wide text-[#0b1a3a] shadow-lg shadow-[#d4af37]/40 transition-all hover:-translate-y-0.5"
+          >
+            Show Full Gallery
+          </a>
         </div>
       </div>
 
@@ -1331,21 +1281,6 @@ function DonationSection() {
   );
 }
 function SermonSection() {
-  const videos = [
-    {
-      src: "https://www.youtube.com/embed/0luNe3LkZlg",
-      title: "?????? ???????? ?????????",
-    },
-    {
-      src: "https://www.youtube.com/embed/G83kJw6auaI",
-      title: "?? ??????????? ??????????? ?????? ?????????",
-    },
-    {
-      src: "https://www.youtube.com/embed/WL98mRSNj-o",
-      title: "???????? ?????? ???? ???? ???????????",
-    },
-  ];
-
   return (
     <section  className="bg-white py-20">
       <div className="mx-auto w-full max-w-6xl px-6">
@@ -1359,23 +1294,7 @@ function SermonSection() {
             </h2>
           </div>
         </Reveal>
-        <div className="mt-12 grid gap-6 lg:grid-cols-3">
-          {videos.map((video) => (
-            <Reveal key={video.src}>
-              <div className="overflow-hidden rounded-2xl shadow-[0_15px_35px_rgba(11,26,58,0.12)]">
-                <iframe
-                  className="aspect-video w-full"
-                  src={video.src}
-                  title={video.title}
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowFullScreen
-                  loading="lazy"
-                  referrerPolicy="strict-origin-when-cross-origin"
-                />
-              </div>
-            </Reveal>
-          ))}
-        </div>
+        <HomeSermons />
       </div>
     </section>
   );
@@ -1449,13 +1368,13 @@ function Footer() {
         <div className="flex flex-col gap-8 md:flex-row md:items-center md:justify-between">
           {/* Left: Logo + Name */}
           <div className="flex items-center gap-4">
-            <div className="h-12 w-12 overflow-hidden rounded-xl bg-white/5 ring-1 ring-white/10">
+            <div className="h-12 w-28 shrink-0 overflow-hidden rounded-xl bg-white ring-1 ring-white/10">
               <Image
-                src="/lh.png"
-                alt="LHE International Ministries"
-                width={48}
+                src="/lhlog.png"
+                alt="Living Hope"
+                width={126}
                 height={48}
-                sizes="48px"
+                sizes="112px"
                 className="h-full w-full object-contain p-1"
               />
             </div>
@@ -1689,6 +1608,7 @@ export default function Home() {
       <HeroSection />
       <AboutSection />
       <MissionVisionTeamSection />
+      <ServicesSection />
       <MinistryActivitiesSection />
       <ChildrenMinistrySection />
 
@@ -1707,7 +1627,6 @@ export default function Home() {
       <PastorProfilePosterSection />
 
       <PrayerSupportSection />
-      <ServicesSection />
       <TestimonialSection />
       <PremiumGallerySection />
 <DonationSection />
