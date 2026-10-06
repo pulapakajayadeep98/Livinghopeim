@@ -18,9 +18,13 @@ export function isPosterName(value: unknown): value is string {
   return typeof value === "string" && NAME_PATTERN.test(value);
 }
 
-// On Vercel the disk is read-only, so posters go to Vercel Blob when its token
-// is configured. Everywhere else they are kept in the project's data folder.
-const useBlob = Boolean(process.env.BLOB_READ_WRITE_TOKEN);
+// On Vercel the disk is read-only, so posters go to Vercel Blob when a store is
+// connected. Everywhere else they are kept in the project's data folder.
+// A connected store sets BLOB_STORE_ID (the SDK then signs in with Vercel's
+// OIDC token); older connections set BLOB_READ_WRITE_TOKEN instead.
+export const useBlob = Boolean(
+  process.env.BLOB_READ_WRITE_TOKEN || process.env.BLOB_STORE_ID
+);
 const LOCAL_ROOT = path.join(process.cwd(), "data", "posters");
 
 function blobPath(kind: PosterKind, name = "") {

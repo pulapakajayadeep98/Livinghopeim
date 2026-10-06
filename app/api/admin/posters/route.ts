@@ -5,6 +5,7 @@ import {
   isPosterKind,
   isPosterName,
   savePoster,
+  useBlob,
 } from "../../../lib/posterStore";
 import {
   getAllPromisePosters,
@@ -73,7 +74,24 @@ export async function POST(request: Request) {
     name = `${Date.now()}-${suffix}.jpg`;
   }
 
-  await savePoster(kind, name, data);
+  try {
+    await savePoster(kind, name, data);
+  } catch (error) {
+    console.error("Poster upload failed", error);
+    // Vercel's disk is read-only, so saving fails there until Blob is connected.
+    const missingBlob = Boolean(process.env.VERCEL) && !useBlob;
+    return NextResponse.json(
+      {
+        error: missingBlob
+          ? "Upload storage is not set up: connect a Vercel Blob store to this project, then redeploy."
+          : // Only signed-in admins reach this, so the real cause is shown.
+            `The poster could not be saved: ${
+              error instanceof Error ? error.message : "unknown error"
+            }`,
+      },
+      { status: 500 }
+    );
+  }
   return NextResponse.json({ ok: true, name });
 }
 
