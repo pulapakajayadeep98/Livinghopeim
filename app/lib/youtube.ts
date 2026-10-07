@@ -34,8 +34,49 @@ function decodeEntities(text: string) {
     .replace(/&amp;/g, "&");
 }
 
-// The channel's "live streams" playlist feed, which YouTube keeps newest first.
+// YouTube's RSS feeds are unreliable (they often answer 404/500 for every
+// channel), so the channel's own "Live" tab is read first and the feed is
+// only a fallback.
 async function fetchStreams(): Promise<Stream[]> {
+  const fromPage = await fetchStreamsPage().catch(() => []);
+  if (fromPage.length > 0) return fromPage;
+  return fetchStreamsFeed().catch(() => []);
+}
+
+// The channel's "Live" tab, newest first. Only broadcasts that have finished
+// ("Streamed 2d ago") are kept, so live and upcoming ones are skipped.
+async function fetchStreamsPage(): Promise<Stream[]> {
+  const response = await fetch(
+    `https://www.youtube.com/channel/${CHANNEL_ID}/streams?hl=en`,
+    { headers: BROWSER_HEADERS, next: { revalidate: 300 } }
+  );
+  if (!response.ok) return [];
+
+  const html = await response.text();
+  const streams: Stream[] = [];
+  for (const card of html.split('"lockupViewModel":{').slice(1)) {
+    const id = card.match(new RegExp(`"contentId":"(${VIDEO_ID})"`));
+    const title = card.match(
+      /"lockupMetadataViewModel":\{"title":\{"content":"((?:[^"\\]|\\.)*)"/
+    );
+    if (!id || !/"Streamed /.test(card)) continue;
+    if (streams.some((stream) => stream.id === id[1])) continue;
+
+    let text = "Living Hope message";
+    if (title) {
+      try {
+        text = JSON.parse(`"${title[1]}"`);
+      } catch {
+        text = title[1];
+      }
+    }
+    streams.push({ id: id[1], title: text });
+  }
+  return streams;
+}
+
+// The channel's "live streams" playlist feed, which YouTube keeps newest first.
+async function fetchStreamsFeed(): Promise<Stream[]> {
   const playlistId = `UULV${CHANNEL_ID.slice(2)}`;
   const response = await fetch(
     `https://www.youtube.com/feeds/videos.xml?playlist_id=${playlistId}`,
